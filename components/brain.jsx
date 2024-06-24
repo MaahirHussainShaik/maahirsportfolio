@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/Link";
+import Link from "next/link";
 import { motion, useTransform } from "framer-motion";
 
 const Brain = ({ scrollYProgress }) => {
