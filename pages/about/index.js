@@ -55,7 +55,7 @@ const About = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              As a passionate sophomore at Auckland University of Technology (AUT) majoring in Software Engineering,
+              As a passionate Student at Auckland University of Technology (AUT) majoring in Software Engineering,
               I am continually driven by my love for coding. I thrive on exploring new technologies and pushing the limits of my knowledge.
               My journey in software engineering is fueled by curiosity and a relentless pursuit of excellence.
               I aim to leverage my skills in innovative projects that create meaningful impact and inspire others.
