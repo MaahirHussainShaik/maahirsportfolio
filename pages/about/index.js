@@ -166,7 +166,7 @@ const About = () => {
                   </div>
                   {/* DEGREE DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2016 - 2020
+                    2020- 2021
                   </div>
                   {/* DEGREE INSTITUTION */}
                   <div className="p-1 text-sm font-semibold">
