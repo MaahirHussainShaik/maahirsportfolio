@@ -23,7 +23,7 @@ const workSlider = {
     },
     {
       title: 'Project 4',
-      description: 'In addition to my larger projects, I have also developed a range of smaller yet impactful projects. These include a talking AI assistant, created using Python, that leverages natural language processing to interact and assist users, and a website, built with HTML and CSS, offering a repository of basic code snippets for quick reference. Each of these projects highlights my versatility and commitment to creating practical and user-friendly solutions.',
+      description: 'In this project, I collaborated within a cross-functional team to develop a SPEED system, where I played the role of backend developer and tester. This is a website, to fetch, post articles or books relating to Software Practices.  Following Agile methodologies,  we utilized Trello for sprint planning, task management, and tracking project progress. My role focused on building the backend infrastructure, where I developed RESTful API endpoints to perform CRUD operations with a MongoDB database. To ensure high code quality and reliability, I implemented automated testing pipelines using Jest and integrated CI/CD workflows via GitHub Actions to automate testing and deployment processes. This project enhanced my skills in backend development, teamwork, and modern DevOps practices.',
     },
   ],
 };

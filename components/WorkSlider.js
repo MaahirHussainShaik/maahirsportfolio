@@ -28,9 +28,9 @@ const workSlider = {
     },
     {
       title: 'Other small Projects',
-      description: 'Languages: Python, HTML, CSS',
-      path: '/High School.jpg',
-      url: ''
+      description: 'Tools & Tech: React.js, Node.js, MongoDB, Github Actions, Jest, Trello, Agile Methodology',
+      path: '/SPEED.jpg',
+      url: 'https://github.com/Fumihiro1/Software-Practice-Empirical-Evidence-Database-SPEED'
     },
   ],
 };
