@@ -12,49 +12,47 @@
 }
 
 .swiper-button-next:after,
-.swiper-button-prev:after,
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
+.swiper-button-prev:after {
   color: #f13024;
 }
 
 @layer base {
   body {
-    @apply bg-secondary overflow-hidden leading-relaxed;
+    @apply bg-secondary leading-relaxed; /* Removed overflow-hidden */
   }
   .page {
-    @apply w-full h-screen overflow-hidden;
+    @apply w-full min-h-screen; /* Changed h-screen to min-h-screen */
   }
   .h1 {
-    @apply text-[35px] leading-tight md:text-[60px] md:leading-[1.3] mb-8 font-semibold;
+    @apply text-[28px] leading-tight sm:text-[35px] md:text-[60px] md:leading-[1.3] mb-6 font-semibold;
   }
   .h2 {
-    @apply text-[35px] leading-tight md:text-[54px] md:leading-[1.3] mb-4 font-semibold;
+    @apply text-[28px] leading-tight sm:text-[35px] md:text-[54px] md:leading-[1.3] mb-4 font-semibold;
   }
   p {
-    @apply leading-[1.8] text-white/60 font-light;
+    @apply text-sm sm:text-base leading-[1.8] text-white/60 font-light;
   }
   .btn,
   .input {
-    @apply h-[52px];
+    @apply h-[48px] sm:h-[52px]; /* Responsive height */
   }
   .input {
-    @apply w-full h-[52px] rounded-lg pl-6 capitalize;
+    @apply w-full h-[48px] sm:h-[52px] rounded-lg pl-4 sm:pl-6 capitalize;
   }
   .input,
   .textarea {
     @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full h-[120px] sm:h-[180px] p-4 sm:p-6 capitalize rounded-lg resize-none;
   }
 }
 
 .swiper-button-next, .swiper-button-prev {
   position: absolute;
   top: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Reduced for mobile */
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,12 +61,26 @@
   border-radius: 50%;
   z-index: 10;
   cursor: pointer;
+  transform: translateY(-50%);
 }
 
 .swiper-button-next {
-  right: 10px;
+  right: 5px; /* Adjusted for mobile */
 }
 
 .swiper-button-prev {
-  left: 10px;
+  left: 5px;
+}
+
+@media (min-width: 640px) { /* sm: breakpoint */
+  .swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
 }
